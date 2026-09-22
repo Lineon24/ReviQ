@@ -3,24 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --hostname 0.0.0.0",
+    "dev": "node scripts/dev.mjs",
     "build": "next build",
-    "start": "next start --hostname 0.0.0.0",
+    "start": "node scripts/dev.mjs --production",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "test:agents": "uv run --locked pytest -q"
   },
   "dependencies": {
-    "next": "^16.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
     "exceljs": "^4.4.0",
-    "papaparse": "^5.5.3",
     "idb-keyval": "^6.2.2",
     "lucide-react": "^0.468.0",
-    "openai": "^6.0.0",
+    "next": "^16.0.0",
+    "papaparse": "^5.5.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1",
-    "zod": "^4.0.0"
+    "remark-gfm": "^4.0.1"
   },
   "overrides": {
     "exceljs": {
@@ -28,12 +27,12 @@
     }
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.0",
     "@types/node": "^22.0.0",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/papaparse": "^5.3.16",
-    "typescript": "^5.9.0",
     "tsx": "^4.20.0",
-    "@playwright/test": "^1.56.0"
+    "typescript": "^5.9.0"
   }
 }

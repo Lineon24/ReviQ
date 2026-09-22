@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "functions": {
+    "api/chat.py": {
+      "maxDuration": 300,
+      "excludeFiles": "{node_modules/**,.next/**,.venv/**,tests/**,docs/**,public/**,legacy/**}"
+    }
+  }
+}

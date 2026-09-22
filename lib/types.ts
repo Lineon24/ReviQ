@@ -7,5 +7,5 @@ export type Review = {
   company: string; mall: string; rating: number; text: string; row: number; sheet: string;
 };
 export type ReviewFile = { id: string; name: string; size: number; addedAt: string; reviews: Review[] };
-export type Message = { id: string; role: "user" | "assistant"; content: string; sources?: string[]; sourceIds?: string[]; preview?: boolean };
-export type Project = { id: string; name: string; createdAt: string; files: ReviewFile[]; messages: Message[]; report?: string; reportKind?: "ai" | "preview" };
+export type Message = { id: string; role: "user" | "assistant"; content: string; sources?: string[]; sourceIds?: string[]; preview?: boolean; engine?: "crewai-v1" | "report-chat-v1"; reportId?: string };
+export type Project = { id: string; name: string; createdAt: string; files: ReviewFile[]; messages: Message[]; report?: string; reportKind?: "ai" | "preview"; reportEngine?: "crewai-v1"; reportId?: string; reportSources?: Record<string, string>; reportPromptVersion?: string; reportState?: "building" | "ready" | "failed" | "stopped"; reportError?: string };
