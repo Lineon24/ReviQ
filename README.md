@@ -50,13 +50,13 @@ ReviQ는 리뷰를 공통 자료로 모으고, **어떤 상품에 어떤 불만�
 
 프로젝트별로 분석 자료를 모으고, 여러 리뷰 파일을 추가합니다. 파일이 없다면 가상 샘플 데이터로 업로드 이후의 흐름을 체험할 수 있습니다.
 
-![ReviQ 프로젝트 화면 — 파일 업로드, 질문 예시, 프로젝트 사이드바](docs/screenshots/workspace.png)
+![ReviQ 프로젝트 화면 — 파일 업로드, 질문 예시, 프로젝트 사이드바](docs/screenshots/reviq-workspace-v2.png)
 
 ### 2. 리뷰 데이터 기반 AI 채팅
 
 전체 파일 또는 특정 파일을 선택해 질문합니다. 답변을 읽으며 상품별 불만, 채널 차이, 개선 방향을 추가로 물어볼 수 있습니다.
 
-![ReviQ AI 채팅 — 업로드한 리뷰에서 상품별 문제를 확인하는 대화](docs/screenshots/chat.png)
+![ReviQ AI 채팅 — 업로드한 리뷰에서 상품별 문제를 확인하는 대화](docs/screenshots/reviq-chat-v2.png)
 
 ### 3. 종합 분석 보고서
 
